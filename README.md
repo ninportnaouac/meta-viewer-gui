@@ -67,6 +67,76 @@
 - **Filtres de fichiers** : changez l’extension dans `askopenfilename`
 - **Ajouter des champs** : modifiez la fonction `extraire_metadata`
 
+- # Lecteur de Métadonnées ComfyUI - Executable Windows (EXE)
+
+Ce README accompagne le fichier **`comfyui_metadata_gui.exe`**, votre application autonome pour afficher les métadonnées d’images issues de ComfyUI.
+
+---
+
+## 💾 Contenu du paquet
+
+- `comfyui_metadata_gui.exe` : exécutable Windows (tout-en-un).
+- `icon.ico` *(optionnel)* : icône de l’application.
+- *(pas de dépendances externes à installer)*
+
+---
+
+## 🚀 Lancement
+
+1. **Double-cliquez** sur `comfyui_metadata_gui.exe`.  
+2. L’interface graphique s’ouvre sans console.
+
+---
+
+## 🎯 Fonctionnalités
+
+- **Ouvrir une image** : cliquez sur **Ouvrir image**, sélectionnez un PNG/JPG.
+- **Glisser-déposer** : déposez directement un fichier image sur la zone de prévisualisation.
+- **Miniature** : aperçu 100×100 px.
+- **Métadonnées** : prompt, sampler, étapes, modèle, VAE, seed, Lora, CFG Scale.
+
+---
+
+## 📂 Structure de l’UI
+
+```
++---------------------------------------------+
+| [Ouvrir image]                              |
++---------------------------------------------+
+| [Zone Prévisualisation] | [Zone Métadonnées]|
+| (Glisser-déposer ici)   | (Copier / Tout sel.)|
++---------------------------------------------+
+```
+
+---
+
+## 🔄 Mise à jour
+
+Pour générer une nouvelle version EXE à partir du code source :
+
+1. Installez **PyInstaller** (si nécessaire) :
+   ```bash
+   pip install pyinstaller
+   ```
+2. Dans le dossier du script Python (`comfyui_metadata_gui.py`), lancez :
+   ```bash
+   pyinstaller --onefile --windowed --icon=icon.ico comfyui_metadata_gui.py
+   ```
+3. Récupérez le nouvel EXE dans `dist/comfyui_metadata_gui.exe`.
+
+---
+
+## ❓ Problèmes & Support
+
+- Si l’appli ne se lance pas, vérifiez votre antivirus ou vos permissions Windows.  
+- Pour toute question, ouvrez une issue sur le dépôt GitHub associé.
+
+---
+
+*Ce programme est fourni "en l’état" sans garantie. Utilisation libre.*
+
+
+
 
 ## Licence
 
