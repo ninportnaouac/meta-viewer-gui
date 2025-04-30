@@ -1,0 +1,10 @@
+# Byte-compiled
+__pycache__/
+*.pyc
+
+# Environnements virtuels
+venv/
+.env/
+
+# Fichiers IDE
+.vscode/
