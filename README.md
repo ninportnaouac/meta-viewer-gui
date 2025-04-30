@@ -1,4 +1,4 @@
-# lecteur-metadata-comf yu
+# lecteur-metadata-comfyui
 
 **⚠️ Ce script est conçu uniquement pour les images issues de ComfyUI.**
 
